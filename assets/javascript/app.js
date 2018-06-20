@@ -84,9 +84,10 @@ $(".incorrect").on("click", function () {
 // page reveals questions answered correctly
 // will show once timer runs out
 
-var scoreboard = "<p> Time's up, the game has ended. </p> <br>" + "Correct Answers: " + wins + "<br>" + "Incorrect Answers: " + losses + "<br>"
+
 
 $("#doneButton").on("click", function() {
+    var scoreboard = "<p> Time's up, the game has ended. </p> <br>" + "Correct Answers: " + wins + "<br>" + "Incorrect Answers: " + losses + "<br>"
     $("#game").html(scoreboard);
 })
 
