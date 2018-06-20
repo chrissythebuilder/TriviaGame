@@ -49,3 +49,65 @@ table {
 
 /* Page Styles Start Here */
 
+.inside {
+	border: 5px solid darkcyan;
+	margin: 20px 175px;
+	background-color: paleturquoise;
+	border-radius: 30px;
+	position: relative;
+}
+
+h1 {
+	font-size: 350%;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 20px;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	background-color: rgb(199, 152, 64);
+	color: white;
+	padding: 20px 0;
+	font-size: 120%;
+}
+
+form {
+	padding: 15px 50px;
+	line-height: 2em;
+	text-align: center;
+}
+
+form p {
+	font-weight: 600;
+}
+
+#doneButton {
+	padding: 10px 50px;
+	margin-left: 450px;
+	margin-bottom: 30px;
+	font-size: 150%;
+	border-radius: 40px;
+	background-color: rgb(199, 152, 64);
+	color: white;
+}
+
+section {
+	background-color: seagreen;
+	padding-bottom: 50px;
+	margin-top: 70px;
+}
+
+section h3 {
+	font-size: 150%;
+	padding: 40px;
+	color: white;
+}
+
+section span {
+	padding: 40px;
+	color: white;
+}

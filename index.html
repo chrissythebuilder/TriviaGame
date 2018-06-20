@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
     
@@ -14,91 +15,91 @@
 
     <h1> Totally Trivial Trivia! </h1>
 
-    <div id = "game">
+    <div class = "game">
     <h2> Time remaining: <span id="countdown"> </span></h2>
+        <div class = "game inside">
+        <form>
+            <p> What country is named for its location on the equator? </p>
+                <input class = "correct" type = "radio" value = "true" name = "one"> Ecuador
+                <input class = "incorrect" type = "radio" value = "false" name = "one"> Madagascar
+                <input class = "incorrect" type = "radio" value = "false" name = "one"> Hawaii
+                <input class = "incorrect" type = "radio" value = "false" name = "one"> Indonesia
+        </form>
 
-    <form>
-        <p> What country is named for its location on the equator? </p>
-            <input class = "correct" type = "radio" value = "true" name = "one"> Ecuador
-            <input class = "incorrect" type = "radio" value = "false" name = "one"> Madagascar
-            <input class = "incorrect" type = "radio" value = "false" name = "one"> Hawaii
-            <input class = "incorrect" type = "radio" value = "false" name = "one"> Indonesia
-    </form>
+        <form>
+            <p> Which park is the most filmed location in the world? </p>
+                <input class = "incorrect" type = "radio" value = "false" name = "two"> San Francisco Bridge
+                <input class = "incorrect" type = "radio" value = "false" name = "two"> Eiffel Tower
+                <input class = "correct" type = "radio" value = "true" name = "two"> Central Park 
+                <input class = "incorrect" type = "radio" value = "false" name = "two"> Pisa Tower 
+        </form>
 
-    <form>
-        <p> Which park is the most filmed location in the world? </p>
-            <input class = "incorrect" type = "radio" value = "false" name = "two"> San Francisco Bridge
-            <input class = "incorrect" type = "radio" value = "false" name = "two"> Eiffel Tower
-            <input class = "correct" type = "radio" value = "true" name = "two"> Central Park 
-            <input class = "incorrect" type = "radio" value = "false" name = "two"> Pisa Tower 
-    </form>
+        <form>
+            <p> According to the popular Christmas song, "Frosty the Snowman", what are the snowman's eyes made out of? </p>
+                <input class = "incorrect" type = "radio" value = "false" name = "three"> Ice
+                <input class = "correct" type = "radio" value = "true" name = "three"> Coal
+                <input class = "incorrect" type = "radio" value = "false" name = "three"> Rocks 
+                <input class = "incorrect" type = "radio" value = "false" name = "three"> Marble
+        </form>
+        
+        <form>
+            <p> What is the name of the first album released by American rock band Bon Jovi? </p>
+                <input class = "correct" type = "radio" value = "true" name = "four"> Bon Jovi 
+                <input class = "incorrect" type = "radio" value = "false" name = "four"> These Days 
+                <input class = "incorrect" type = "radio" value = "false" name = "four"> Keep the Faith
+                <input class = "incorrect" type = "radio" value = "false" name = "four"> 7800 Fahrenheit 
+        </form>
 
-    <form>
-        <p> According to the popular Christmas song, "Frosty the Snowman", what are the snowman's eyes made out of? </p>
-            <input class = "incorrect" type = "radio" value = "false" name = "three"> Ice
-            <input class = "correct" type = "radio" value = "true" name = "three"> Coal
-            <input class = "incorrect" type = "radio" value = "false" name = "three"> Rocks 
-            <input class = "incorrect" type = "radio" value = "false" name = "three"> Marble
-    </form>
-    
-    <form>
-        <p> What is the name of the first album released by American rock band Bon Jovi? </p>
-            <input class = "correct" type = "radio" value = "true" name = "four"> Bon Jovi 
-            <input class = "incorrect" type = "radio" value = "false" name = "four"> These Days 
-            <input class = "incorrect" type = "radio" value = "false" name = "four"> Keep the Faith
-            <input class = "incorrect" type = "radio" value = "false" name = "four"> 7800 Fahrenheit 
-    </form>
+        <form>
+            <p> Which Broadway musical broke the record for Tony nominations for 2016? </p>
+                <input class = "incorrect" type = "radio" value = "false" name = "five"> Lion King 
+                <input class = "incorrect" type = "radio" value = "false" name = "five"> Wicked
+                <input class = "incorrect" type = "radio" value = "false" name = "five"> Aladdin 
+                <input class = "correct" type = "radio" value = "true" name = "five"> Hamilton
+        </form>
 
-    <form>
-        <p> Which Broadway musical broke the record for Tony nominations for 2016? </p>
-            <input class = "incorrect" type = "radio" value = "false" name = "five"> Lion King 
-            <input class = "incorrect" type = "radio" value = "false" name = "five"> Wicked
-            <input class = "incorrect" type = "radio" value = "false" name = "five"> Aladdin 
-            <input class = "correct" type = "radio" value = "true" name = "five"> Hamilton
-    </form>
+        <form>
+            <p> What is the name for the offspring of a male lion and a female tiger? </p>
+                <input class = "incorrect" type = "radio" value = "false" name = "six"> Tion 
+                <input class = "incorrect" type = "radio" value = "false" name = "six"> Cub 
+                <input class = "correct" type = "radio" value = "true" name = "six"> Liger 
+                <input class = "incorrect" type = "radio" value = "false" name = "six"> Tiger/Lion, it does not matter 
+        </form>
 
-    <form>
-        <p> What is the name for the offspring of a male lion and a female tiger? </p>
-            <input class = "incorrect" type = "radio" value = "false" name = "six"> Tion 
-            <input class = "incorrect" type = "radio" value = "false" name = "six"> Cub 
-            <input class = "correct" type = "radio" value = "true" name = "six"> Liger 
-            <input class = "incorrect" type = "radio" value = "false" name = "six"> Tiger/Lion, it does not matter 
-    </form>
+        <form>
+            <p> What is the only bird known to fly backwards? </p>
+                <input class = "incorrect" type = "radio" value = "false" name = "seven"> Mockingbird 
+                <input class = "incorrect" type = "radio" value = "false" name = "seven"> Swallow 
+                <input class = "correct" type = "radio" value = "true" name = "seven"> Hummingbird 
+                <input class = "incorrect" type = "radio" false = "false" name = "seven"> Cuckoos 
+        </form>
 
-    <form>
-        <p> What is the only bird known to fly backwards? </p>
-            <input class = "incorrect" type = "radio" value = "false" name = "seven"> Mockingbird 
-            <input class = "incorrect" type = "radio" value = "false" name = "seven"> Swallow 
-            <input class = "correct" type = "radio" value = "true" name = "seven"> Hummingbird 
-            <input class = "incorrect" type = "radio" false = "false" name = "seven"> Cuckoos 
-    </form>
+        <form>
+            <p> What was the first console video game that allowed the game to be saved? </p>
+                <input class = "incorrect" type = "radio" value = "false" name = "eight"> Mario  
+                <input class = "correct" type = "radio" value = "true" name = "eight"> The Legend of Zelda 
+                <input class = "incorrect" type = "radio" value = "false" name = "eight"> Spacewar 
+                <input class = "incorrect" type = "radio" value = "false" name = "eight"> Pac Man  
+        </form>
 
-    <form>
-        <p> What was the first console video game that allowed the game to be saved? </p>
-            <input class = "incorrect" type = "radio" value = "false" name = "eight"> Mario  
-            <input class = "correct" type = "radio" value = "true" name = "eight"> The Legend of Zelda 
-            <input class = "incorrect" type = "radio" value = "false" name = "eight"> Spacewar 
-            <input class = "incorrect" type = "radio" value = "false" name = "eight"> Pac Man  
-    </form>
+        <form>
+            <p> What was the first decentralized cryptocurrency? </p>
+                <input class = "correct" type = "radio" value = "true" name = "nine"> Bitcoin 
+                <input class = "incorrect" type = "radio" value = "false" name = "nine"> Blockchain 
+                <input class = "incorrect" type = "radio" value = "false" name = "nine"> Litecoin 
+                <input class = "incorrect" type = "radio" value = "false" name = "nine"> Ethereum 
+        </form>
 
-    <form>
-        <p> What was the first decentralized cryptocurrency? </p>
-            <input class = "correct" type = "radio" value = "true" name = "nine"> Bitcoin 
-            <input class = "incorrect" type = "radio" value = "false" name = "nine"> Blockchain 
-            <input class = "incorrect" type = "radio" value = "false" name = "nine"> Litecoin 
-            <input class = "incorrect" type = "radio" value = "false" name = "nine"> Ethereum 
-    </form>
+        <form>
+            <p> Who was the first Disney princess? </p>
+                <input class = "incorrect" type = "radio" value = "false" name = "ten"> Cinderella 
+                <input class = "incorrect" type = "radio" value = "false" name = "ten"> Sleeping Beauty
+                <input class = "incorrect" type = "radio" value = "false" name = "ten"> Princess Jasmine 
+                <input class = "correct" type = "radio" value = "true" name = "ten"> Snow White 
+        </form>
 
-    <form>
-        <p> Who was the first Disney princess? </p>
-            <input class = "incorrect" type = "radio" value = "false" name = "ten"> Cinderella 
-            <input class = "incorrect" type = "radio" value = "false" name = "ten"> Sleeping Beauty
-            <input class = "incorrect" type = "radio" value = "false" name = "ten"> Princess Jasmine 
-            <input class = "correct" type = "radio" value = "true" name = "ten"> Snow White 
-    </form>
-
-    <button id = "doneButton"> DONE </button>
-
+        <button id = "doneButton"> DONE </button>
+        </div>
     </div>
 
 </body>

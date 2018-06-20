@@ -1,23 +1,20 @@
 $(document).ready(function() {
 
-var time = 30;
+var time = 120;
+var end = "<p> Time's up, the game has ended. </p> <br>" + "Correct Answers: " + this.wins + "<br>" + "Incorrect Answers: " + this.losses + "<br>"
 
 var timer = setInterval(function() {
     $("#countdown").text(time--);
     if (time == -1) {
         $("#countdown").text("Time's Up!");
-        $("#game").html(scoreboard);
+        $(".game").html(end);
         clearInterval(timer);
     }
 }, 1000);
 
 // create a countdown timer of 120 seconds
 
-
-
 // game ends when the time runs out
-
-
 
 // create a trivia form with multiple choice or true/false options (10 questions)
 
@@ -87,8 +84,8 @@ $(".incorrect").on("click", function () {
 
 
 $("#doneButton").on("click", function() {
-    var scoreboard = "<p> Time's up, the game has ended. </p> <br>" + "Correct Answers: " + wins + "<br>" + "Incorrect Answers: " + losses + "<br>"
-    $("#game").html(scoreboard);
+    var scoreboard = " <section> <h3> Time's up, the game has ended. </h3>" + "<br> <span> Correct Answers: </span>" + wins + "<br>" + "<br> <span> Incorrect Answers: </span>" + losses + " </section>"
+    $(".game").html(scoreboard);
 })
 
 
