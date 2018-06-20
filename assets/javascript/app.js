@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
-var time = 120
+var time = 30;
 
 var timer = setInterval(function() {
     $("#countdown").text(time--);
     if (time == -1) {
         $("#countdown").text("Time's Up!");
+        $("#game").html(scoreboard);
         clearInterval(timer);
     }
 }, 1000);
@@ -22,9 +23,47 @@ var timer = setInterval(function() {
 
 // player can only pick one answer per question
 
-$("input[type=radio]").on("change", function() {
-    $("input[type=radio]").not(this).prop("checked", false);
+
+$("input[name=one]").on("change", function() {
+    $("input[name=one]").not(this).prop("checked", false);
 });
+
+$("input[name=two]").on("change", function() {
+    $("input[name=two]").not(this).prop("checked", false);
+});
+
+$("input[name=three]").on("change", function() {
+    $("input[name=three]").not(this).prop("checked", false);
+});
+
+$("input[name=four]").on("change", function() {
+    $("input[name=four]").not(this).prop("checked", false);
+});
+
+$("input[name=five]").on("change", function() {
+    $("input[name=five]").not(this).prop("checked", false);
+});
+
+$("input[name=six]").on("change", function() {
+    $("input[name=six]").not(this).prop("checked", false);
+});
+
+$("input[name=seven]").on("change", function() {
+    $("input[name=seven]").not(this).prop("checked", false);
+});
+
+$("input[name=eight]").on("change", function() {
+    $("input[name=eight]").not(this).prop("checked", false);
+});
+
+$("input[name=nine]").on("change", function() {
+    $("input[name=nine]").not(this).prop("checked", false);
+});
+
+$("input[name=ten]").on("change", function() {
+    $("input[name=ten]").not(this).prop("checked", false);
+});
+
 
 // this data attr for value of each button (true or false)
 
@@ -33,7 +72,7 @@ $("input[type=radio]").on("change", function() {
 var wins = 0;
 var losses = 0;
 
-$("correct").on("click", function () {
+$(".correct").on("click", function () {
     wins++;
 });
 
@@ -49,7 +88,6 @@ var scoreboard = "<p> Time's up, the game has ended. </p> <br>" + "Correct Answe
 
 $("#doneButton").on("click", function() {
     $("#game").html(scoreboard);
-    $("#countdown").text("");
 })
 
 
